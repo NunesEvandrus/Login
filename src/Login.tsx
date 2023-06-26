@@ -13,14 +13,15 @@ export default function Principal() {
         Faça login em sua conta
       </Titulo>
             <Box w="100%">
-              <FormControl mt={3}>
-                <FormControl.Label>Email</FormControl.Label>
-                  <EntradaTexto placeholder='Insira o seu email'/>
-                </FormControl>
-              <FormControl mt={3}>
-                <FormControl.Label>Senha</FormControl.Label>
-                <EntradaTexto placeholder='Insira sua senha'/>
-              </FormControl>
+              <EntradaTexto
+                label="Email"
+                placeholder="Insira seu endereço de e-mail"
+              />
+              <EntradaTexto
+                label="Senha"
+                placeholder="Insira sua senha"
+                secureTextEntry = {true}
+              />
             </Box>
            <Botao>
               Entrar
